@@ -3,10 +3,8 @@ import psycopg2
 import os
 import csv
 
-
 if __name__ == "__main__":
     csv_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), "north_data"))
-    
     csv_files = {
         "customers": os.path.join(csv_folder, "customers_data.csv"),
         "employees": os.path.join(csv_folder, "employees_data.csv"),
